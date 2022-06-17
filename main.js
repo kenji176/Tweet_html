@@ -62,7 +62,7 @@ window.addEventListener('DOMContentLoaded', function () {
         html2canvas(document.getElementById('Tweet')).then(canvas => {
             let downloadEle = document.createElement("a");
             downloadEle.href = canvas.toDataURL("image/png");
-            downloadEle.download = "canvas.png";
+            downloadEle.download = "Tweet.png";
             downloadEle.click();
         });
     }
